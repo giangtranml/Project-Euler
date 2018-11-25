@@ -132,9 +132,9 @@ def problem_15():
         | 7 |   |   |   |   |   |
         -------------------------
 
+        This approach not only works for the square but also for the rectangle.
+
         --------------------------------------------------------------------
-        2x2: (2 + 1)*2
-        3x3: (2 + 2)
     """
 
     n = 20
@@ -153,4 +153,21 @@ def problem_15():
         print(p)
     print(path[n-1][n-1])
 
-problem_15()
+def problem_16():
+    num = 1 << 1000
+    res = 0
+    while num > 0:
+        res += num % 10
+        num //= 10
+
+    print(res)
+
+def problem_17():
+    sample = """one, two, three, four, five, six, seven, eight, nine, ten
+             eleven, twelve, thirteen, forteen, fifteen, sixteen, seventeen,
+             eighteen, nineteen, twenty, thirty, forty,
+             fifty, sixty, seventy, eighty, ninety
+             hundred
+             thousand"""
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 30
+    40, 50,
