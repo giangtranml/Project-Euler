@@ -215,4 +215,4 @@ def problem_17():
     print(res)
 
 
-problem_17()
+def problem_18_67():
